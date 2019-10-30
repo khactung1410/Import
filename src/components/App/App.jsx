@@ -4,6 +4,7 @@ import {LoginPage} from '../LoginPage'
 import {HomePage} from '../HomePage'
 import {history} from '../../helpers/history'
 import { connect } from 'react-redux';
+import {PrivateRoute} from '../../helpers/PrivateRoute'
 import './App.scss';
 
 class App extends Component {
@@ -14,7 +15,7 @@ class App extends Component {
                     <Switch>
                         <Route path="/login" component={LoginPage} />
                         <Route path="/home" component={HomePage} />
-                        <Route path="*" component={LoginPage} />
+                        <PrivateRoute exact path="/" component={HomePage} />
                     </Switch>
                 </Router>
             </div>

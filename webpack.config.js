@@ -34,7 +34,6 @@ module.exports = {
         historyApiFallback: true
     },
     externals: {
-        // global app config object
         config: JSON.stringify({
             apiUrl: 'http://localhost:9000/api'
         })

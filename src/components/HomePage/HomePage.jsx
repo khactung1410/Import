@@ -17,8 +17,8 @@ function mapStateToProps(state) {
     return {}
 }
 
-function mapDispatchToProps() {
-    return {}
+const mapDispatchToProps = {
+    
 }
 
 const connectedHomePage = connect(mapStateToProps, mapDispatchToProps)(HomePage)
